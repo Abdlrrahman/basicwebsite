@@ -11,6 +11,9 @@
   @include('inc.navbar')
 
 <div class='container'>
+ @if(Request::is('/'))
+      @include('inc.showcase')
+  @endif
 <div class='row'>
 <div class='col-8'>
 @yield('content')
